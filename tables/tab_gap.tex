@@ -1,0 +1,18 @@
+\begin{table}[!htbp]\centering
+\begingroup\linespread{1}\selectfont\small
+\setlength{\tabcolsep}{4pt}
+\newcommand{\rh}[1]{\rotatebox{90}{\parbox{2.6cm}{\raggedright #1}}}
+\caption{Comparison with the closest literature (\checkmark: addressed; $\circ$: partly addressed; --: not addressed).}\label{tab:gap}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{3.9cm}ccccccccc@{}}\toprule
+Study & \rh{Real MRF or public data} & \rh{AI detection} & \rh{Detector-error propagation} & \rh{Mass balance} & \rh{Purity and recovery} & \rh{Bale-grade constraints} & \rh{Economics} & \rh{Operating-point optimisation} & \rh{Uncertainty analysis}\\\midrule
+Waste-detection benchmarks \citep{bashkirova2022zerowaste,abid2025robust} & \checkmark & \checkmark & -- & -- & -- & -- & -- & -- & --\\\addlinespace[2pt]
+Reviews of AI sorting \citep{lu2022cvreview,haldankar2026robotic} & $\circ$ & \checkmark & -- & -- & $\circ$ & $\circ$ & $\circ$ & -- & --\\\addlinespace[2pt]
+Sensor-based material-flow studies \citep{kroell2021mass,kroell2023nir,schloegl2024prediction} & \checkmark & $\circ$ & -- & \checkmark & \checkmark & -- & -- & -- & $\circ$\\\addlinespace[2pt]
+Vision-based stream monitoring \citep{cuingnet2022portik} & \checkmark & \checkmark & -- & $\circ$ & $\circ$ & -- & -- & -- & --\\\addlinespace[2pt]
+MRF process model \citep{pressley2015mrf} & \checkmark & -- & -- & \checkmark & \checkmark & -- & \checkmark & -- & $\circ$\\\addlinespace[2pt]
+MRF techno-economic analysis \citep{olafasakin2023tea} & \checkmark & -- & -- & \checkmark & $\circ$ & -- & \checkmark & -- & \checkmark\\\addlinespace[2pt]
+Outbound bale-contamination audit \citep{damgacioglu2020outbound} & \checkmark & -- & -- & \checkmark & \checkmark & \checkmark & $\circ$ & -- & --\\\midrule
+\textbf{This study} & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark\\\bottomrule
+\end{tabular*}
+\endgroup
+\end{table}

@@ -1,0 +1,16 @@
+\begin{table}[!htbp]\centering\caption{Net sales value (NSV, USD per tonne of paper-line feed) by detector and operating policy; superellipse PR family, baseline parameters. Grade refers to the paper-line output. The no-QC reference is 31.97 USD t$^{-1}$ (mixed-paper grade). Last column: NSV under the power PR family.}\label{tab:results}
+\resizebox{\textwidth}{!}{\begin{tabular}{lrrrrrrr}\toprule
+Detector & NSV$_{F1}$ & Grade$_{F1}$ & NSV$^\ast$ & Grade$^\ast$ & Rank mAP & Rank NSV$^\ast$ & NSV$^\ast$ (power)\\\midrule
+GDINO-T (sup.) & 44.40 & SRPN & 45.37 & SRPN & 7 & 7 & 45.52\\
+GDINO-T (semi) & 44.42 & SRPN & 45.50 & SRPN & 5 & 5 & 45.88\\
+GDINO-B (sup.) & 44.44 & SRPN & 45.59 & SRPN & 2 & 2 & 46.03\\
+GDINO-B (semi) & 44.47 & SRPN & 45.72 & SRPN & 1 & 1 & 46.24\\
+Co-DETR Swin-L & 44.44 & SRPN & 45.58 & SRPN & 4 & 3 & 46.02\\
+DETA Swin-L & 44.44 & SRPN & 45.53 & SRPN & 3 & 4 & 46.04\\
+DINO Swin-L & 44.44 & SRPN & 45.42 & SRPN & 6 & 6 & 45.70\\
+RT-DETR-L & 44.43 & SRPN & 44.59 & SRPN & 10 & 11 & 44.59\\
+YOLO11-L & 44.44 & SRPN & 44.59 & SRPN & 11 & 10 & 44.60\\
+RT-DETR-L (PL) & 44.44 & SRPN & 45.01 & SRPN & 9 & 8 & 45.01\\
+YOLO11-L (PL) & 44.43 & SRPN & 44.96 & SRPN & 8 & 9 & 44.95\\
+TridentNet & 30.42 & MP & 44.29 & SRPN & 12 & 12 & 44.28\\
+\bottomrule\end{tabular}}\end{table}

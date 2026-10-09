@@ -1,0 +1,22 @@
+\begin{table}[!htbp]\centering\caption{Monte Carlo results (2000 draws; detector ranking on 1000 draws, class weights on 298 draws). All assumptions in Table~\ref{tab:params} sampled jointly; price year and PR family drawn at random.}\label{tab:mc}
+\resizebox{\textwidth}{!}{\begin{tabular}{lrrrr}\toprule
+Quantity & Mean & P5 & Median & P95\\\midrule
+Value of QC, F1 thresholds (USD t$^{-1}$) & 10.41 & -3.66 & 13.07 & 39.17\\
+Value of QC, value-optimal (USD t$^{-1}$) & 18.50 & 8.85 & 14.90 & 54.25\\
+Value of QC, value-optimal with recovery floor (USD t$^{-1}$) & 17.23 & -0.43 & 13.66 & 53.78\\
+Gain of recovery-floor policy over F1 (USD t$^{-1}$) & 6.82 & 0.00 & 0.66 & 17.00\\
+Target material recovered, F1 (kg t$^{-1}$) & 50.93 & 19.87 & 50.67 & 81.90\\
+Target material recovered, recovery-floor policy (kg t$^{-1}$) & 55.76 & 20.64 & 53.11 & 96.04\\
+Contaminants left in paper, F1 (kg t$^{-1}$) & 29.86 & 11.42 & 29.38 & 50.73\\
+Contaminants left in paper, recovery-floor policy (kg t$^{-1}$) & 24.51 & 11.95 & 26.77 & 32.37\\
+Mass sold at specification grade, F1 (kg t$^{-1}$) & 936.49 & 892.87 & 936.54 & 976.53\\
+Mass sold at specification grade, recovery-floor (kg t$^{-1}$) & 924.04 & 852.51 & 933.08 & 975.44\\
+Paper-product purity, F1 (\%) & 96.76 & 94.38 & 96.83 & 98.82\\
+Paper-product purity, value-optimal (\%) & 96.80 & 96.19 & 96.82 & 97.47\\
+Optimal cardboard recall, value-optimal policy & 0.43 & 0.15 & 0.38 & 0.75\\
+Optimal cardboard recall, recovery-floor policy & 0.72 & 0.68 & 0.68 & 0.83\\
+Cardboard share of marginal accuracy value & 0.66 & 0.23 & 0.72 & 1.00\\
+Soft-plastic share of marginal accuracy value & 0.23 & 0.00 & 0.18 & 0.67\\
+Kendall $\tau$, mAP vs.\ value rank (12 detectors) & 0.85 & 0.67 & 0.88 & 0.95\\
+\midrule \multicolumn{5}{l}{Probabilities: paper keeps SRPN grade under F1 51\%, value-optimal 100\%, recovery floor 99\%; F1 worth less than no QC 41\%; top-mAP detector is top-value 70\%.}\\
+\bottomrule\end{tabular}}\end{table}

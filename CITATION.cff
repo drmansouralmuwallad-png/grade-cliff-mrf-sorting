@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Code and results for: Crossing the grade cliff: How AI sorting thresholds determine resource recovery and bale value at material recovery facilities"
+authors:
+  - family-names: Almuwallad
+    given-names: Mansour
+    orcid: "https://orcid.org/0009-0002-9547-0621"
+    affiliation: "Yanbu Industrial College, Royal Commission for Jubail and Yanbu"
+license: MIT
+year: 2026

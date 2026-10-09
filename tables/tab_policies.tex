@@ -1,0 +1,12 @@
+\begin{table}[!htbp]\centering\caption{Resource-recovery and value outcomes per tonne of paper-line feed for seven operating policies (GDINO-B (semi), baseline). Recovered: target material in its own bin, whatever the grade of that bin; misdirected: target objects in a wrong bin; paper lost: paper picked by false positives; residual: contaminants left in the paper product; at-spec: mass leaving at a positive-value grade. Paper product: mass and the grade at which it sells (SRPN, sorted residential papers; MP, mixed paper).}\label{tab:policies}
+\resizebox{\textwidth}{!}{\begin{tabular}{lrlrrrrrrrrrrr}\toprule
+Policy & NSV & Paper & \multicolumn{4}{c}{Recovered (kg t$^{-1}$)} & Total & Misdir. & Paper & \multicolumn{2}{c}{Residual (kg t$^{-1}$)} & At-spec & Picks\\\cmidrule(lr){4-7}\cmidrule(lr){11-12}
+ & (USD t$^{-1}$) & (kg t$^{-1}$, grade) & CB & SP & RP & M & (kg t$^{-1}$) & (kg t$^{-1}$) & lost & Cardboard & Plastics+metal & (kg t$^{-1}$) & (t$^{-1}$)\\\midrule
+No QC & 31.97 & 1000 MP & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 69.9 & 10.1 & 1000 & 0\\
+F1-optimal & 44.47 & 934 SRPN & 43.7 & 4.0 & 1.8 & 0.3 & 49.9 & 9.9 & 6.1 & 20.0 & 0.2 & 936 & 2168\\
+High-precision (p$\ge$0.90) & 32.22 & 977 MP & 18.7 & 1.7 & 1.1 & 0.1 & 21.7 & 0.8 & 0.5 & 50.7 & 6.8 & 998 & 654\\
+Uniform recall 0.80 & 42.44 & 902 SRPN & 52.8 & 2.8 & 1.2 & 0.3 & 57.1 & 22.9 & 17.7 & 0.0 & 0.0 & 904 & 4097\\
+Global threshold (tuned) & 45.04 & 946 SRPN & 38.5 & 3.5 & 1.6 & 0.4 & 44.0 & 6.4 & 3.9 & 27.5 & 2.1 & 948 & 1710\\
+Value-optimal & 45.72 & 940 SRPN & 15.4 & 5.5 & 2.0 & 0.4 & 23.3 & 27.9 & 9.0 & 28.1 & 0.6 & 958 & 2161\\
+Value-optimal, recovery floor & 44.99 & 939 SRPN & 47.6 & 0.5 & 1.7 & 0.4 & 50.1 & 5.4 & 5.8 & 21.7 & 2.8 & 941 & 1845\\
+\bottomrule\end{tabular}}\end{table}

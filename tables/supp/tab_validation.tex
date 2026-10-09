@@ -1,0 +1,11 @@
+\begin{table}[!htbp]\centering
+\caption{External plausibility checks against published MRF evidence.}\label{tab:validation}
+\resizebox{\textwidth}{!}{\begin{tabular}{p{3.6cm}p{4.6cm}p{5.4cm}p{2.4cm}}\toprule
+Quantity & Model & Published evidence & Consistent?\\\midrule
+Detector accuracy on MRF conveyor & Inputs: mAP 24.2--54.3\% (ZeroWaste-f) & Facility datasets 20--35\% AP vs.\ $>$90\% in laboratory \citep{haldankar2026robotic} & Yes (facility-level inputs)\\
+Paper product without QC & \NQresCB{} kg t$^{-1}$ cardboard + \NQresNF{} kg t$^{-1}$ non-fibre; fails SRPN & 0 of 266 newsprint samples met mill standards \citep{damgacioglu2020outbound} & Yes\\
+Cardboard (OCC) bale quality & F1 policy: \OccProF{}\% prohibitives ($>$1\% limit) & 31.4\% of 35 OCC samples met mill standards \citep{damgacioglu2020outbound} & Yes\\
+Robot pick demand & \RFpicks{}--\PicksFone{} picks t$^{-1}$ & $\approx$60 effective picks min$^{-1}$ per arm \citep{haldankar2026robotic}; 2.6--3.0 arms at 5 t h$^{-1}$ & Plausible\\
+Value of QC & \RFgain{}--\GainOpt{} USD t$^{-1}$ & MRF operating cost 45.48 USD t$^{-1}$ \citep{olafasakin2023tea}; amortised 19.8--24.9 USD t$^{-1}$ \citep{pressley2015mrf} & Same order\\
+Mass balance & Closure to 1,000 kg t$^{-1}$ & -- & Exact\\\bottomrule
+\end{tabular}}\end{table}

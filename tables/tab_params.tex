@@ -1,0 +1,37 @@
+\begin{table}[!htbp]\centering
+\begingroup\linespread{1}\selectfont\small
+\caption{Model parameters and their sources. Prices are converted from \textcent/lb and USD per short ton to USD per metric tonne.}\label{tab:params}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash\leftskip=0.9em}X ccc@{}}\toprule
+Parameter & Baseline (2026) & 2025 / range & Source\\\midrule
+\multicolumn{4}{@{}l}{\emph{Market prices (USD t$^{-1}$; national averages, sorted and baled)}}\\
+Sorted residential papers (PS 56) & 46.85 & 61.73 & a\\
+Mixed paper (PS 54) & 31.97 & 42.99 & a\\
+Old corrugated containers (PS 11) & 79.92 & 79.92 & a\\
+PE film, Grade A & 330.7 & 420.2 & a\\
+PE film, Grade B & 88.2 & 88.2$^\ast$ & a\\
+PE film, Grade C & $-$12.3 & $-$12.3$^\ast$ & a\\
+Rigid plastics (HDPE proxy) & 289.47 & 91.05 & a\\
+Aluminium used beverage cans & 2050 & 1846 & a\\
+Steel cans & 220 & 185 & a\\
+\addlinespace[3pt]
+\multicolumn{4}{@{}l}{\emph{Grade rules (maximum share of bale mass)}}\\
+SRPN: prohibitives / outthrows & 2\% / 3\% & -- & b\\
+Mixed paper: prohibitives & 2\% & -- & b\\
+OCC: prohibitives / total non-OCC & 1\% / 5\% & -- & b\\
+PE film: Grade A / B contamination & 5\% / 10\% & -- & c\\
+\addlinespace[3pt]
+\multicolumn{4}{@{}l}{\emph{Stream data}}\\
+Item-count mix CB/SP/RP/M (\%) & 64.6/29.6/4.6/1.2 & -- & d\\
+\addlinespace[3pt]
+\multicolumn{4}{@{}l}{\emph{Modelling assumptions (baseline; range used in sensitivity analysis)}}\\
+Target mass share of feed, $w$ & 0.08 & 0.03--0.15 & A\\
+Item mass CB/SP/RP/M (g) & 50/10/30/25 & $\times$0.5--$\times$2 & A\\
+Paper-piece mass, $m_p$ (g) & 15 & 5--30 & A\\
+False-positive share from paper, $\phi$ & 0.5 & 0.2--0.8 & A\\
+Pick success, $\eta$ & 1.00 & 0.85--1.00 & A\\
+Aluminium share of metal class & 0.5 & 0.2--0.8 & A\\
+Disposal charge on contaminants (USD t$^{-1}$) & 50 & 25--100 & A\\
+Off-spec paper price (USD t$^{-1}$) & 0 & $-$20--20 & A\\
+\bottomrule\end{tabularx}
+\par\smallskip{\raggedright\footnotesize Sources: a, \citet{smp2026june}; b, \citet{rema2016paper}; c, \citet{apr2024film}; d, \citet{abid2025robust}; A, modelling assumption, varied in the sensitivity and Monte Carlo analyses. CB, cardboard; SP, soft plastic; RP, rigid plastic; M, metal. $^\ast$Not reported for 2025; held at 2026 values.\par}
+\endgroup\end{table}
