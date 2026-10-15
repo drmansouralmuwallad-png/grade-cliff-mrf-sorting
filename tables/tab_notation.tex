@@ -1,0 +1,33 @@
+\begin{table}[!htbp]\centering
+\begingroup\linespread{1}\selectfont\footnotesize
+\caption{Notation.}\label{tab:notation}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X@{}}\toprule
+Symbol & Meaning\\\midrule
+\multicolumn{2}{@{}l}{\emph{Sets and indices}}\\
+$c, j \in \mathcal C$ & Target (contaminant) classes: cardboard (CB), soft plastic (SP), rigid plastic (RP), metal (M); $|\mathcal C| = 4$\\
+$b \in \mathcal B$ & Output streams: paper product $L$ and one bin per class\\
+$\ell \in \mathcal L_b$ & Specification grades of stream $b$, ordered by price\\
+$\gamma \in \Gamma$ & Grade pattern: one grade for each graded stream ($L$, cardboard bin, film bin)\\
+\addlinespace[2pt]
+\multicolumn{2}{@{}l}{\emph{Parameters}}\\
+$n_c$, $m_c$ & Class-$c$ items per tonne of feed and mean item mass (kg)\\
+$p_c(\cdot)$ & Precision--recall curve of the detector for class $c$\\
+$\phi$, $m_p$ & Share of false positives that are paper pieces; mass of a paper piece (kg)\\
+$\eta$ & Pick success probability given a detection\\
+$\theta_{b\ell k}$ & Limit $k$ (e.g.\ prohibitive or outthrow share, film purity) defining grade $\ell$ of stream $b$\\
+$P_{b\ell}$ & Price of stream $b$ sold at grade $\ell$ (USD t$^{-1}$); nondecreasing in $\ell$\\
+$d$, $c_{\mathrm{pick}}$ & Disposal charge on contaminants of paid-on-target bins; cost per pick\\
+$B$, $R_{\min}$ & Pick budget per tonne; recovery floor (kg t$^{-1}$)\\
+\addlinespace[2pt]
+\multicolumn{2}{@{}l}{\emph{Decision variables and model outputs}}\\
+$\mathbf r = (r_c)$ & Operating recall of each class (equivalently, its confidence threshold)\\
+$TP_c, FP_c, D_c$ & True, false and total detections labelled $c$ per tonne\\
+$M_b(\mathbf r)$ & Mass leaving in stream $b$ (kg t$^{-1}$)\\
+$s_{bk}(\mathbf r)$ & Quality indicator $k$ of stream $b$ (contaminant share or purity)\\
+$g_b(\mathbf r)$ & Grade reached by stream $b$: highest $\ell$ whose limits hold\\
+$R(\mathbf r)$ & Target mass recovered to its own bin (kg t$^{-1}$)\\
+$\Pi(\mathbf r)$ & Specification-based net sales value (USD t$^{-1}$ of feed)\\
+$V_\gamma(\mathbf r)$ & Value with stream prices fixed by grade pattern $\gamma$\\
+\bottomrule\end{tabularx}
+\endgroup
+\end{table}

@@ -1,0 +1,18 @@
+\begin{table}[!htbp]\centering
+\begingroup\linespread{1}\selectfont\scriptsize
+\setlength{\tabcolsep}{2pt}
+\newcommand{\rh}[1]{\rotatebox{90}{\parbox{2.75cm}{\raggedright #1}}}
+\caption{Positioning against the closest literature (\checkmark: addressed; $\circ$: partly addressed; --: not addressed).}\label{tab:gap}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{4.2cm}cccccccccc@{}}\toprule
+Stream of work & \rh{Classifier errors as model input} & \rh{Mass balance, purity, recovery} & \rh{Specification grades} & \rh{Economic objective} & \rh{Operating threshold as decision variable} & \rh{Discontinuous (grade-tiered) objective} & \rh{Capacity constraint} & \rh{Structural (analytical) results} & \rh{Uncertainty analysis} & \rh{Public, reproducible data}\\\midrule
+Cost-sensitive and F1 thresholding \citep{elkan2001foundations,provost2001robust,lipton2014thresholding} & \checkmark & -- & -- & $\circ$ & \checkmark & -- & -- & \checkmark & -- & --\\
+Inspection and screening design \citep{tang1994screening,konstantaras2010lot,chien2023bayesian} & \checkmark & -- & $\circ$ & \checkmark & \checkmark & -- & $\circ$ & \checkmark & $\circ$ & --\\
+Quality grading in remanufacturing \citep{zikopoulos2008sorting,ferguson2009grading} & $\circ$ & -- & \checkmark & \checkmark & $\circ$ & -- & $\circ$ & \checkmark & $\circ$ & --\\
+Separation design, grade--recovery \citep{wills2016mineral,gaustad2012aluminum} & -- & \checkmark & $\circ$ & -- & $\circ$ & -- & -- & $\circ$ & -- & --\\
+MRF process and techno-economic models \citep{pressley2015mrf,olafasakin2023tea} & -- & \checkmark & -- & \checkmark & -- & -- & $\circ$ & -- & \checkmark & \checkmark\\
+Waste-detection benchmarks and reviews \citep{bashkirova2022zerowaste,abid2025robust,haldankar2026robotic} & \checkmark & -- & $\circ$ & $\circ$ & -- & -- & $\circ$ & -- & -- & \checkmark\\
+Sensor-based material-flow monitoring \citep{kroell2021mass,cuingnet2022portik,schloegl2024prediction} & $\circ$ & \checkmark & $\circ$ & -- & -- & -- & -- & -- & $\circ$ & $\circ$\\\midrule
+\textbf{This study} & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark\\\bottomrule
+\end{tabular*}
+\endgroup
+\end{table}

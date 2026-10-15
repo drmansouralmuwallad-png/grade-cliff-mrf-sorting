@@ -1,0 +1,11 @@
+\begin{table}[!htbp]\centering\caption{Paired Monte Carlo comparison of five policies on identical draws (2,000 draws; all uncertain inputs sampled jointly as in Section~\ref{sec:design-unc}; GDINO-B (semi)). Value of QC: NSV gain over no robotic QC.}\label{tab:mcbench}
+\resizebox{\textwidth}{!}{\begin{tabular}{lrrcrrrr}\toprule
+Policy & \multicolumn{3}{c}{Value of QC (USD t$^{-1}$)} & SRPN kept & Value $<0$ & Recovered & Picks\\\cmidrule(lr){2-4}
+ & Mean & Median & 5th--95th pct. & (\% draws) & (\% draws) & (kg t$^{-1}$, median) & (t$^{-1}$, median)\\\midrule
+F1-optimal & 10.23 & 13.07 & [$-$3.65, 39.07] & 53.5 & 40.8 & 49.4 & 2126\\
+Cost-sensitive (grade-blind) & 9.70 & 11.99 & [$-$3.12, 40.09] & 47.9 & 43.0 & 44.9 & 1918\\
+Purity-constrained recovery & 6.29 & $-$0.24 & [$-$2.45, 32.56] & 29.2 & 52.3 & 35.3 & 1085\\
+Global threshold (tuned) & 17.29 & 14.15 & [7.22, 52.63] & 100.0 & 0.0 & 48.9 & 2120\\
+VO with recovery floor (VO-RF) & 16.75 & 13.74 & [$-$0.49, 52.33] & 99.2 & 5.4 & 51.4 & 2265\\
+\bottomrule\end{tabular}}
+\end{table}

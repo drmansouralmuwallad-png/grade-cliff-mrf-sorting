@@ -1,0 +1,14 @@
+\begin{table}[!htbp]\centering
+\begingroup\linespread{1}\selectfont\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{Why the tuned global threshold (GL) has a higher mean value than VO-RF in the paired Monte Carlo analysis, by target mass share $w$ of the feed (2,000 draws; means; values of QC in USD t$^{-1}$).}\label{tab:gapdecomp}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrrrrrr@{}}\toprule
+\shortstack[l]{Target\\share $w$} & Draws & GL & VO-RF & \shortstack{Flexi-\\bility} & \shortstack{Floor\\cost} & Net & \shortstack{Floor\\binds\\(\% draws)} & \shortstack{Extra\\recovery\\(kg t$^{-1}$)} & \shortstack{VO-RF $<$\\no QC\\(\% draws)}\\\midrule
+3--6\% & 530 & 13.84 & 12.55 & 0.38 & 1.66 & $-$1.29 & 100 & 13.1 & 17.7\\
+6--9\% & 517 & 15.60 & 15.30 & 0.72 & 1.02 & $-$0.30 & 96 & 5.4 & 0.2\\
+9--12\% & 497 & 17.19 & 17.22 & 0.80 & 0.77 & 0.03 & 75 & 1.7 & 0.8\\
+12--15\% & 456 & 23.34 & 22.78 & 0.87 & 1.42 & $-$0.55 & 82 & 1.5 & 2.0\\
+\midrule All draws & 2,000 & 17.29 & 16.75 & 0.68 & 1.22 & $-$0.54 & 89 & 5.6 & 5.4\\
+\bottomrule\end{tabular*}
+\par\smallskip{\raggedright\footnotesize Flexibility $=$ VO $-$ GL: gain of unconstrained per-class thresholds (VO) over GL. Floor cost $=$ VO $-$ VO-RF: loss from the recovery floor and the film constraint. Net $=$ VO-RF $-$ GL $=$ flexibility $-$ floor cost. Floor binds: share of draws in which the VO solution violates the recovery floor or the film constraint. Extra recovery: VO-RF minus GL. VO-RF $<$ no QC: share of draws in which VO-RF is worth less than no quality control.\par}
+\endgroup
+\end{table}

@@ -1,0 +1,11 @@
+\begin{table}[!htbp]\centering\caption{Computational performance and solution quality for problem (P) without and with the recovery floor (GDINO-B (semi), baseline). Times are wall-clock seconds on one core of a 2-vCPU cloud machine (Python 3, NumPy, SciPy). The decomposition solves each grade-pattern subproblem from six grid starts and reports the best solution whose true value $\Pi$ is confirmed by re-evaluation.}\label{tab:comp}
+\resizebox{\textwidth}{!}{\begin{tabular}{lrrrrrr}\toprule
+Method & Operating points & \multicolumn{2}{c}{Without recovery floor} & \multicolumn{3}{c}{With recovery floor (VO-RF)}\\\cmidrule(lr){3-4}\cmidrule(lr){5-7}
+ & evaluated & Time (s) & $\Pi^\ast$ (USD t$^{-1}$) & Time (s) & $\Pi^\ast$ (USD t$^{-1}$) & Feasible points\\\midrule
+Exhaustive enumeration, $k=14$ & 38,416 & 0.07 & 45.519 & 0.09 & 44.998 & 611\\
+Exhaustive enumeration, $k=20$ & 160,000 & 0.28 & 45.619 & 0.22 & 44.694 & 3,216\\
+Exhaustive enumeration, $k=30$ & 810,000 & 1.21 & 45.656 & 1.32 & 44.965 & 18,352\\
+Exhaustive enumeration, $k=50$ & 6,250,000 & 9.75 & 45.723 & 9.51 & 44.995 & 166,110\\
+\addlinespace[2pt]Grade-pattern decomposition + SLSQP & -- & 8.80 & 45.753 & 1.15 & 45.028 & --\\
+\bottomrule\end{tabular}}
+\end{table}

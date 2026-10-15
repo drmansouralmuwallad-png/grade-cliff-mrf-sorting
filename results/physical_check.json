@@ -1,0 +1,33 @@
+{
+ "mc1": {
+  "unphysical_selected": {
+   "f1": 0,
+   "opt": 0,
+   "rf": 0
+  },
+  "grid_sample_draws": 100,
+  "mean_unphysical_grid_share": 0.00020694502290712015,
+  "max_unphysical_grid_share": 0.0051280716368179435,
+  "draws_where_unphysical_point_beats_physical": 0
+ },
+ "mc2": {
+  "unphysical_selected": {
+   "F1": 0,
+   "CS": 0,
+   "PC": 0,
+   "GL": 0,
+   "VO": 0,
+   "RF": 0
+  },
+  "grid_sample_draws": 100,
+  "mean_unphysical_grid_share": 0.0037247501041232788,
+  "max_unphysical_grid_share": 0.07145460224906286,
+  "draws_where_unphysical_point_beats_physical": 0
+ },
+ "deterministic": {
+  "detector_points_checked": 48,
+  "unphysical": 0,
+  "scenario_grid_unphysical_share_max": 0.0,
+  "scenario_unphysical_beats": 0
+ }
+}

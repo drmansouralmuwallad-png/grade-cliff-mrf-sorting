@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "Code and results for: Crossing the grade cliff: How AI sorting thresholds determine resource recovery and bale value at material recovery facilities"
+title: "Code and results for: Crossing the grade cliff: Specification-aware threshold optimisation for AI-guided robotic sorting at material recovery facilities"
 authors:
   - family-names: Almuwallad
     given-names: Mansour

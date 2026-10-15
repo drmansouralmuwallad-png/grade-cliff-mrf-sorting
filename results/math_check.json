@@ -1,0 +1,107 @@
+{
+ "T1": {
+  "paper_nested": true,
+  "occ_nested": true,
+  "film_nested": true,
+  "price_monotone_all": true,
+  "cases": [
+   {
+    "price": "2026-06",
+    "p_off": -20.0,
+    "paper": true,
+    "occ": true,
+    "film": true
+   },
+   {
+    "price": "2026-06",
+    "p_off": 0.0,
+    "paper": true,
+    "occ": true,
+    "film": true
+   },
+   {
+    "price": "2026-06",
+    "p_off": 20.0,
+    "paper": true,
+    "occ": true,
+    "film": true
+   },
+   {
+    "price": "2025-06",
+    "p_off": -20.0,
+    "paper": true,
+    "occ": true,
+    "film": true
+   },
+   {
+    "price": "2025-06",
+    "p_off": 0.0,
+    "paper": true,
+    "occ": true,
+    "film": true
+   },
+   {
+    "price": "2025-06",
+    "p_off": 20.0,
+    "paper": true,
+    "occ": true,
+    "film": true
+   }
+  ]
+ },
+ "T2": {
+  "physical_points": 399944,
+  "physical_points_with_empty_bin": 137813,
+  "max_abs_diff_physical": 2.842170943040401e-14,
+  "unphysical_points": 56,
+  "max_abs_diff_unphysical": 20.48643684309404
+ },
+ "T3_mc_f1_context": {
+  "n": 2000,
+  "monotone": 2000,
+  "other_limits_hold": 2000,
+  "with_cliff": 1848,
+  "single_paper_change": 1848,
+  "max_jump_err_after_smooth": 0.018551812264412604,
+  "max_smooth_step": 0.24822573139453397,
+  "sweeps_with_other_stream_changes": 2000,
+  "other_change_exactly_at_cliff": 1,
+  "truncated_sweeps": 2000,
+  "starts_above": 1853,
+  "ends_below": 1995
+ },
+ "T3_random_context_baseline": {
+  "n": 2000,
+  "monotone": 2000,
+  "other_limits_hold": 2000,
+  "with_cliff": 1849,
+  "single_paper_change": 1849,
+  "max_jump_err_after_smooth": 0.0006765726413284767,
+  "max_smooth_step": 0.0011795311997389035,
+  "sweeps_with_other_stream_changes": 2000,
+  "other_change_exactly_at_cliff": 0,
+  "truncated_sweeps": 0,
+  "starts_above": 1849,
+  "ends_below": 2000
+ },
+ "T4_failing_conditions": {
+  "no_cliff": 152,
+  "not_monotone": 0,
+  "other_limits_fail": 0
+ },
+ "T3_r_tilde": {
+  "min_mc": 0.8574,
+  "min_random": 0.98,
+  "max_r_hat_mc": 0.9344,
+  "max_f1_cb_mc": 0.625,
+  "draws_f1_beyond_r_tilde": 0
+ },
+ "T4": {
+  "n": 1848,
+  "agree": 1848,
+  "r_hat_min": 0.0004,
+  "r_hat_max": 0.9344,
+  "f1_cb_min": 0.6,
+  "f1_cb_max": 0.625
+ }
+}

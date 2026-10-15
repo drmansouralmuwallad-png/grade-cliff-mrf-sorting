@@ -1,0 +1,21 @@
+\begin{table}[!htbp]\centering
+\begingroup\linespread{1}\selectfont\footnotesize\setlength{\tabcolsep}{2.5pt}
+\caption{Outcomes of nine operating policies per tonne of paper-line feed (GDINO-B (semi), baseline). Masses in kg per tonne of feed; film grade in parentheses.}\label{tab:policies}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrlcrrrrrr@{}}\toprule
+Policy & \shortstack{NSV\\(USD\\t$^{-1}$)} & \shortstack{Paper\\prod-\\uct} & \shortstack{Paper\\grade} & \shortstack{Film\\purity\\(\%)} & \shortstack{Re-\\cov-\\ered} & \shortstack{Mis-\\direc-\\ted} & \shortstack{Paper\\lost} & \shortstack{Resid.\\card-\\board} & \shortstack{Resid.\\plast.,\\metal} & \shortstack{Picks\\(t$^{-1}$)}\\\midrule
+No QC & 31.97 & 1000 & MP & -- & 0.0 & 0.0 & 0.0 & 69.9 & 10.1 & 0\\
+\addlinespace[3pt]
+F1-optimal$^{a}$ & 44.47 & 934 & SRPN & 35 (C) & 49.9 & 9.9 & 6.1 & 20.0 & 0.2 & 2168\\
+High-precision$^{a}$ & 32.22 & 977 & MP & 74 (C) & 21.7 & 0.8 & 0.5 & 50.7 & 6.8 & 654\\
+Uniform 0.80$^{a}$ & 42.44 & 902 & SRPN & 12 (C) & 57.1 & 22.9 & 17.7 & 0.0 & 0.0 & 4097\\
+\addlinespace[3pt]
+Cost-sensitive$^{b}$ & 44.34 & 931 & SRPN & 40 (C) & 51.4 & 10.4 & 6.9 & 18.2 & 0.0 & 2298\\
+Purity-constrained$^{b}$ & 31.08 & 958 & MP & 91 (B) & 38.3 & 2.0 & 2.2 & 33.4 & 6.2 & 1133\\
+\addlinespace[3pt]
+GL$^{c}$ & 45.04 & 946 & SRPN & 42 (C) & 44.0 & 6.4 & 3.9 & 27.5 & 2.1 & 1710\\
+VO$^{c}$ & 45.72 & 940 & SRPN & 14 (C) & 23.3 & 27.9 & 9.0 & 28.1 & 0.6 & 2161\\
+VO-RF$^{c}$ & 44.99 & 939 & SRPN & 95 (A) & 50.1 & 5.4 & 5.8 & 21.7 & 2.8 & 1845\\
+\bottomrule\end{tabular*}
+\par\smallskip{\raggedright\footnotesize Groups: $^{a}$specification-agnostic detection rules; $^{b}$benchmarks from cost-sensitive classification and separation design (Section~\ref{sec:benchmarks}); $^{c}$grade-aware policies that optimise the specification-based value $\Pi$ (Section~\ref{sec:model}). GL: global threshold (tuned); VO: value-optimal; VO-RF: value-optimal with recovery floor. NSV: net sales value. SRPN: sorted residential papers; MP: mixed paper. Recovered: target mass in its own bin; misdirected: target objects in a wrong bin; paper lost: paper picked by false positives; residual: contaminants left in the paper product.\par}
+\endgroup
+\end{table}
